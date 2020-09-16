@@ -1,0 +1,18 @@
+$black: #232323;
+$p: #525252;
+$white: #fffcfc;
+$gothic: 'Carrois Gothic SC', sans-serif;
+$lato: 'Lato', sans-serif;
+$anotherWhite: #f6f6f6;
+
+@mixin mobile-only {
+    @media(max-width: 600px){
+        @content
+    }
+}
+@mixin max-smaller {
+    @media(min-width: 601px) and (max-width: 1100px){
+        @content
+    }
+}
+
